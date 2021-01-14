@@ -1,0 +1,52 @@
+--INSERT INTO series (id, title, author_id, subgenre_id) VALUES (1, "A Song of Ice and Fire", 1, 1), (2, "Second Series", 2, 2);
+
+INSERT INTO subgenres (id, name) VALUES (1, "medieval"), (2, "space opera");
+
+INSERT INTO authors (id, name) VALUES (1, "George R. R. Martin"), (2, "Second Author");
+
+INSERT INTO books (id, title, year, series_id) VALUES (1, "Game of Thrones", 1996, 1), (2, "A Clash of Kings", 1998, 1), (3, "A Storm of Swords", 2000, 1), (4, "First Book", 2002, 2), (5, "Second Book", 2003, 2), (6, "Third Book", 2005, 2);
+
+INSERT INTO characters (id, name, motto, species, author_id) VALUES (1, "Lady", "Woof Woof", "direwolf", 1), (2, "Tyrion Lanister", "A Lanister always pays is debts", "human", 1), (3, "Daenerys Targaryen", "If I look back I am lost", "human", 1), (4, "Eddard Stark", "Winter is coming", "human", 1);
+
+INSERT INTO characters (id, name, motto, species, author_id) VALUES (5, "Character One", "motto one", "cylon", 2), (6, "Character Two", "motto two", "human", 2), (7, "Character Three", "motto three", "cylon", 2), (8, "Character Four", "motto four", "cylon", 2);
+
+INSERT INTO character_books (id, book_id, character_id) VALUES (1, 1, 1), (2, 1, 2), (3, 2, 2), (4, 3, 2), (5, 1, 3), (6, 2, 3), (7, 3, 3), (8, 1, 4);
+
+INSERT INTO character_books (id, book_id, character_id) VALUES (9, 4, 5), (10, 4, 6), (11, 5, 6), (12, 6, 6), (13, 4, 7), (14, 5, 7), (15, 6, 7), (16, 4, 8);
+
+INSERT INTO series (id, title, author_id, subgenre_id) VALUES (1, "Star Wars", 1, 1);
+INSERT INTO series (id, title, author_id, subgenre_id) VALUES (2, "Lord of the Rings", 2, 2);
+
+-- INSERT INTO subgenres (id, name) VALUES (1, "Sci-fi Fantasy"), (2, "Fantasy");
+
+-- INSERT INTO authors (id, name) VALUES (1, "George Lucas"), (2, "J.R.R. Tolkien");
+
+-- INSERT INTO books (id, title, year, series_id) VALUES (1, "A New Hope", 1977, 1), (2, "Empire Strikes Back", 1980, 1), (3, "Return of the Jedi", 1983, 1), (4, "Fellowship of the Ring", 2001, 2), (5, "The Two Towers", 2002, 2), (6, "Return of the King", 2003, 2);
+
+-- INSERT INTO characters (id, name, motto, species, author_id) VALUES 
+-- (1, "Luke Skywalker", "NOOOOOO!", "Humanoid", 1),
+-- (2, "Han Solo", "I know", "Humanoid", 1),
+-- (3, "Bib Fortuna", "He is no Jedi", 1),
+-- (4, "Admiral Ackbar", "It's a trap!", "Mon Calamari", 1),
+-- (5, "Gimli", "And my axe!", "Dwarf", 2),
+-- (6, "Legolas", "You have my bow!", "Elf", 2),
+-- (7, "Boromir", "One does not simply walk into Mordor", "Man", 2),
+-- (8, "Treebeard", "I always like going South", "Ent", 2);
+
+-- INSERT INTO characters_books (id, book_id, character_id) VALUES
+-- (1, 1, 1),
+-- (2, 2, 1),
+-- (3, 3, 1),
+-- (4, 1, 2),
+-- (5, 2, 2),
+-- (6, 3, 2),
+-- (7, 3, 3),
+-- (8, 3, 4),
+-- (9, 4, 5),
+-- (10, 5, 5),
+-- (11, 6, 5),
+-- (12, 4, 6),
+-- (13, 5, 6),
+-- (14, 6, 6),
+-- (15, 4, 7),
+-- (16, 6, 8);
